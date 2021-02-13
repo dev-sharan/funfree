@@ -7,6 +7,7 @@ tasks:
     nvm alias default 12.20.2
     npx @angular/cli analytics off
     npm i -g @angular/cli@10.2.2
+    npm i -g http-server
     npm install
 vscode:
   extensions:
