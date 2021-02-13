@@ -1,0 +1,7 @@
+<div>
+  <div *ngFor="let page of links$ | async">
+    <div class="" *ngIf="Object.keys(page).includes('title')" [routerLink]="[page.route]">
+      {{ page.title }}
+    </div>
+  </div>
+</div>

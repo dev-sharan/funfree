@@ -1,1 +1,1 @@
-[{"route":"/"},{"route":"/blog"},{"route":"/about"}]
+[{"route":"/"},{"route":"/blog/angular-tutorial","title":"Angular tutorial","description":"blog description","published":true,"sourceFile":"angular-tutorial.md"},{"route":"/about"},{"route":"/blogs"}]

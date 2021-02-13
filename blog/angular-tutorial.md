@@ -1,7 +1,7 @@
 ---
-title: Angular tutorial
-description: blog description
-published: false
+title: 'Angular tutorial'
+description: 'blog description'
+published: true
 ---
 
 # Angular tutorial
