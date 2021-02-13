@@ -4,6 +4,12 @@ export const config: ScullyConfig = {
   projectName: "funfree",
   outDir: './dist/static',
   routes: {
+    '/blog/:slug': {
+      type: 'contentFolder',
+      slug: {
+        folder: "./blog"
+      }
+    },
   },
   puppeteerLaunchOptions: {
     args: [

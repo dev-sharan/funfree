@@ -1,23 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './component/home/home.component';
-import { BlogComponent } from './component/blog/blog.component';
-import { AboutComponent } from './component/about/about.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: HomeComponent,
-    pathMatch: 'full'
-  },
-  {
-    path: 'blog',
-    component: BlogComponent
-  },
-  {
-    path: 'about',
-    component: AboutComponent
-  }
+  { path: '', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
+  { path: 'blog', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule) },
+  { path: 'about', loadChildren: () => import('./about/about.module').then(m => m.AboutModule) }
 ];
 
 @NgModule({
